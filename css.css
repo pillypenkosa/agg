@@ -1,0 +1,191 @@
+:root {
+
+	--bg1: #024;
+	--bg2: #469;
+
+	--bg-t: linear-gradient( to top, var( --bg1 ), var( --bg2 ) );
+	--bg-b: linear-gradient( to bottom, var( --bg1 ), var( --bg2 ) );
+	--bg-l: linear-gradient( to left, var( --bg1 ), var( --bg2 ) );
+	--bg-r: linear-gradient( to right, var( --bg1 ), var( --bg2 ) );
+
+}
+
+
+
+
+
+
+
+
+
+body {
+
+	font-family: Courier;
+	/*background-color: #000;*/
+	/*background: linear-gradient( to right, #001, #077 );*/
+	background: var( --bg-r );
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #ff0;
+}
+	a:hover {
+		color: #0ff;
+	}
+
+
+
+#nav {
+	margin: 0 0 10px 0;
+}
+	#nav .btn {
+		display: inline-block;
+		margin: 1px;
+		padding: 1px 10px;
+		border-radius: 5px;
+		/*background: linear-gradient( to bottom, #001, #077 );*/
+		background: var( --bg-t );
+		color: #fff;
+		cursor: pointer;
+	}
+		#nav .btn:hover {
+			background: var( --bg-b );
+		}
+
+
+		#nav .btn.active {
+			background: linear-gradient( to bottom, #039, #0cc );
+			/*color: var( --bg1 );*/
+		}
+
+
+
+
+
+
+.spoiler {
+	margin: 0 0 5px 0;
+}
+	.spoiler .spoiler-title {
+		padding: 0 10px;
+		border-radius: 5px;
+		font-weight: bold;
+		background: var( --bg-t );
+		cursor: pointer;
+	}
+		.spoiler .spoiler-title:hover {
+			background: var( --bg-b );
+		}
+
+		.spoiler-title-cat {
+			font-weight: normal;
+			color: #999;
+		}
+
+	.spoiler .spoiler-body {
+		margin: 20px 0 30px 20px;
+	}
+		.spoiler .spoiler-body .link {
+			margin: 0px 0 15px 0px;
+		}
+
+		.spoiler .spoiler-body table {
+			border-collapse: collapse;
+			/*border: 2px dotted blue;*/
+		}	
+			.spoiler .spoiler-body table td {
+				padding: 1px 20px;
+				border: 1px dotted #777;
+				color: #fff;
+
+			}
+			.spoiler .spoiler-body table td.txt-key {
+				font-style: oblique;
+				color: #999;
+			}
+			.spoiler .spoiler-body table td.td-separator {
+
+
+				padding: 0 0 10px 0;
+				/*background: linear-gradient( to right, #033, #055 );*/
+				border-width: 0;
+
+
+			}
+
+
+
+
+
+
+
+
+
+.txt-clue-manufacturer {
+	color: #0ff;
+	cursor: help;
+}
+	.txt-clue-manufacturer:hover {
+		color: #0f0;
+	}
+
+
+
+
+.a-title {
+	cursor: pointer;
+}
+	.a-title:hover {
+		color: #0f0;
+	}
+
+
+
+
+
+
+
+table td.img512 img {
+	margin: 10px 0 10px;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	text-align: center;
+	/*margin: 0 auto;*/
+}
+
+
+
+	footer img {
+		height: 200px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
