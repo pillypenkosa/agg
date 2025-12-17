@@ -254,6 +254,22 @@ const arrListSpecification = [
 },
 
 
+
+{
+	id: 'car_radio', title: 'Магнітола', cat: { specification: 1, },
+	keyval: [
+		
+		{ k: 'Виробник' 		, v: 'Kenwood' 	, },
+		{ k: 'Модель' 			, v: 'KDC-3057U' 	, },
+		{ backspace: true },
+
+		{ k: 'Магазин' 			, v: 'tehnostar.com.ua' 		, href: 'https://tehnostar.com.ua/avtomagnitoly/Kenwood_KDC-3057.html?srsltid=AfmBOoqkfwMAGk5ombnhZNtB8XVTVQBNwhNx7omPMVY8mhLNRAH3Rmi5', },
+		{ k: 'Інструкція' 		, v: 'mcgrp.ru' 				, href: 'https://mcgrp.ru/files/viewer/924371/1', },
+		{ backspace: true },
+
+	],
+},
+
 {
 	id: 'tunning', title: 'Тюнінг', cat: { specification: 1, },
 	keyval: [
@@ -276,6 +292,16 @@ const arrListSpecification = [
 
 	],
 },
+
+
+
+
+
+
+
+
+
+
 
 
 

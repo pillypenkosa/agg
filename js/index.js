@@ -155,13 +155,41 @@ function showSpoilers( arr ) {
 
 				if ( k_keyval.manufacturer ) {
 
-					let htmlManufacturerTitle = '';
-					let htmlManufacturerCountry = '';
+					//let htmlManufacturerTitle = '';
+					//let htmlManufacturerCountry = '';
+					let htmlManufacturer = '';
 					if ( objListManufacturer && objListManufacturer[ k_keyval.manufacturer ] ) {
 
+
+						let htmlManufacturerName = '';
+						let htmlATitle= '';
+						//let htmlCountryYear = '';
+
+
+
+						//let htmlCountry = '';
 						if ( objListManufacturer[ k_keyval.manufacturer ].title ) 
-							htmlManufacturerTitle = objListManufacturer[ k_keyval.manufacturer ].title;
+							htmlManufacturerName = objListManufacturer[ k_keyval.manufacturer ].title;
 						
+						if ( objListManufacturer[ k_keyval.manufacturer ].country ) 
+							htmlATitle = objListManufacturer[ k_keyval.manufacturer ].country;
+						
+						if ( objListManufacturer[ k_keyval.manufacturer ].year ) 
+							htmlATitle += ` ( ${ objListManufacturer[ k_keyval.manufacturer ].year } )`;
+						
+
+
+						if ( objListManufacturer[ k_keyval.manufacturer ].internet && objListManufacturer[ k_keyval.manufacturer ].internet.avtopro ) {
+
+							htmlManufacturer = `<a href="${ objListManufacturer[ k_keyval.manufacturer ].internet.avtopro }" title="${ htmlATitle }"  target="_blank">${ htmlManufacturerName }${ htmlLinkSign }</a>`;
+
+
+						}
+
+
+
+
+/*
 
 						let htmlYear = '';
 						if ( objListManufacturer[ k_keyval.manufacturer ].country ) {
@@ -173,11 +201,12 @@ function showSpoilers( arr ) {
 						}
 						
 
-
+*/
 
 					}
 
-					htmlTBody += `<tr><td class="txt-key">Виробник</td><td class="txt-val">${ htmlManufacturerTitle }${ htmlManufacturerCountry }</td></tr>`;
+					//htmlTBody += `<tr><td class="txt-key">Виробник</td><td class="txt-val">${ htmlManufacturerTitle }${ htmlManufacturerCountry }</td></tr>`;
+					htmlTBody += `<tr><td class="txt-key">Виробник</td><td class="txt-val">${ htmlManufacturer }</td></tr>`;
 				}
 
 
@@ -325,8 +354,8 @@ function showSpoilers( arr ) {
 			htmlDate = `<span class="spoiler-title-cat">${ k_spoiler.date }</span> `;
 		
 		let htmlAct = '';
-		if ( k_spoiler.act ) 
-			htmlAct = `<span class="spoiler-title-cat"> ...${ k_spoiler.act }</span> `;
+		if ( k_spoiler.act && objListServiceAct && objListServiceAct[ k_spoiler.act ] ) 
+			htmlAct = `<span class="spoiler-title-cat"> ...${ objListServiceAct[ k_spoiler.act ].title }</span> `;
 		
 
 
@@ -415,21 +444,63 @@ function prepareArrOEM() {
 
 			if ( k_oem.cat && k_oem.cat[ k_cat.id ] ) {
 
+				tempArr.push( { k: 'з/ч', v: k_oem.title, } );
+				tempArr.push( { img: k_oem.id, } );
 
-				let htmlVagN = {};
+
 				if ( k_oem.n ) {
-					k_oem.n.forEach( k_vag_n => {
-						htmlVagN.k = 'код';
-						htmlVagN.v = `VAG ${ k_vag_n }`;
-					});
 
+					k_oem.n.forEach( k_vag_n => {
+						tempArr.push( { k: 'код', v: 'VAG ' + k_vag_n, } );
+					});
 				}
+
+
+
+				if ( k_oem.manufacturer ) {
+
+					//console.log( k_oem.manufacturer );
+
+					k_oem.manufacturer.forEach( k_manufacturer => {
+
+						let htmlK = '';
+						let htmlV = '';
+						//let htmlCode = '';
+
+						if ( k_manufacturer.id ) {
+
+							// перевірка тільки наявності посилання на Автопро
+							if ( objListManufacturer && objListManufacturer[ k_manufacturer.id ] && objListManufacturer[ k_manufacturer.id ].internet && objListManufacturer[ k_manufacturer.id ].internet.avtopro ) {
+
+								if ( objListManufacturer[ k_manufacturer.id ].title ) {
+
+									//htmlK = k_manufacturer.id;
+
+									htmlK = `<a href="${ objListManufacturer[ k_manufacturer.id ].internet.avtopro }" title="${ objListManufacturer[ k_manufacturer.id ].country } ( ${ objListManufacturer[ k_manufacturer.id ].year } )" target="_blank">${ objListManufacturer[ k_manufacturer.id ].title }${ htmlLinkSign }</a>`;
+								}
+							}
+						}
+
+						if ( k_manufacturer.n ) 
+							htmlV = k_manufacturer.n;
+				
+						tempArr.push( { k: 'код', v: `${ htmlK } // ${ htmlV }` } );
+
+					});
+				}
+
+				
+
+				if ( k_oem.txt ) 
+					tempArr.push( { k: 'txt', v: k_oem.txt, } );
+
+
+				
 
 				//console.log( htmlVagN );
 
-				tempArr.push( { k: 'з/ч', v: k_oem.title, } );
-				tempArr.push( htmlVagN );
-				tempArr.push( { img: k_oem.id, } );
+				tempArr.push( { backspace: true, } );
+				tempArr.push( { backspace: true, } );
 				tempArr.push( { backspace: true, } );
 			}
 

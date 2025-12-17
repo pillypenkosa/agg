@@ -82,8 +82,54 @@ const arrListOEM = [
 
 
 
+{ id: '357513031' 		, title: 'Амортизатор задній' 									, manufacturer: [ 
+																							{ id: 'vag' 		, n: '357513031S' 	, }, 
+																								], cat: { chassis: 1, }, },
+
+{ id: '357413031' 		, title: 'Амортизатор передній' 									, manufacturer: [ 
+																							{ id: 'vag' 		, n: '357413031' 	, }, 
+																								], cat: { chassis: 1, }, },
+
+
+
 { id: 'n90288901' 		, title: 'Болт/пробка ( маслозливна ) піддону двигуна' 			, n: [ 'N90288901', ] 		, cat: { motor: 1, under_hood: 1, bolt: 1, }, },
-{ id: 'n0138492' 		, title: 'Болт ( шайба/кільце )' 								, n: [ 'N0138492', ] 		, cat: { motor: 1, under_hood: 1, bolt: 1, }, },
+{ id: 'n0138492' 		, title: 'Болт ( шайба/кільце )' 								, n: [ 'N0138492', ] 		, cat: { motor: 1, under_hood: 1, bolt: 1, }, txt: 'Тільки шайба/кільце', },
+
+{ id: 'n10231601' 		, title: 'Болт диску гальмівного' 								, manufacturer: [ { id: 'vag', n: 'N10231601', }, ], cat: { bolt: 1, chassis: 1, }, },
+
+
+
+{ id: '357615601' 		, title: 'Диск гальмівний передній вентильований 4*100 ( 2E/AGG )' 			, manufacturer: [ 
+
+																										{ id: 'vag', n: '357615601', }, 
+																										{ id: 'vag', n: '6N0615301D', }, 
+																										{ id: 'vag', n: '357615301', }, 
+																										{ id: 'vag', n: '321615301D', }, 
+
+																											], cat: { chassis: 1, }, },
+
+{ id: '6n0615601' 		, title: 'Диск гальмівний задній 4*100 ( 2E/AGG )' 				, manufacturer: [ 
+
+																								{ id: 'vag', n: '6N0615601', }, 
+																								{ id: 'vag', n: '191615601', }, 
+						
+
+																									], cat: { chassis: 1, }, },
+
+
+{ id: '357615601b' 		, title: 'Диск гальмівний 5*100 ( ABF )' 						, manufacturer: [ { id: 'vag', n: '357615601B', }, ], cat: { chassis: 1, }, },
+
+
+
+
+//{ id: '357615601' 		, title: 'Диск гальмівний 4*100 ( 2E/AGG )' 					, manufacturer: [ { id: 'vag', n: '357615601', }, ], cat: { chassis: 1, }, },
+
+
+
+
+
+
+
 
 
 
@@ -92,9 +138,34 @@ const arrListOEM = [
 { id: '357857521' 		, title: 'Дзеркало ( головна відображуюча поверхня )' 			, n: [ '357857521', '357857521A', '357857521C', '357857522', '357857522A', '6K9857521D', '6K9857521E', '6K9857521J', '6K9857522C', ], cat: { mirror: 1, body: 1, }, },
 { id: '3b0857537' 		, title: 'Дзеркало ( корпус )' 									, n: [ '3B0857537 BGRU', ], cat: { mirror: 1, body: 1, }, },
 
+
+
+
+
+
+
+{ id: '3a0419091' 		, title: 'Кермо' 												, manufacturer: [ { id: 'vag', n: '3A0419091', }, ], cat: { salon: 1, }, },
+
+
 { id: '3a0947561' 		, title: 'Кнопка/кінцевик закриття дверей' 						, n: [ '3A0947561A', ] 		, cat: { door: 1, salon: 1, btn: 1, }, },
 { id: '3A0959855B' 		, title: 'Кнопка ЕСП ( передня права )' 						, n: [ '3A0959855B', ] 		, cat: { door: 1, glass: 1, salon: 1, btn: 1, }, },
 { id: '02a945413' 		, title: 'Кнопка/датчик ввімкнення ліхтарів заднього ходу' 		, n: [ '02A945413', ] 		, cat: { under_hood: 1, btn: 1, gearbox: 1, light: 1, }, },
+
+
+
+
+//{ id: '' 		, title: 'Колодки гальмівні задній' 						, manufacturer: [ { id: 'vag', n: '', }, ], cat: { chassis: 1, }, },
+
+
+
+
+
+
+
+
+
+
+
 { id: '1J0121321' 		, title: 'Кришка бачка розширювального антифризного' 			, n: [ '1J0121321B', ] 		, cat: { under_hood: 1, plastic: 1, }, },
 { id: '357839090' 		, title: 'Кришка замка двері задньої правої' 					, n: [ '357839090', ] 		, cat: { plastic: 1, door: 1, }, },
 { id: '3a1863081' 		, title: 'Кришка/дно реле/запобіжників' 						, n: [ '3A1863081', ] 		, cat: { electro: 1, salon: 1, plastic: 1, }, },
@@ -105,13 +176,15 @@ const arrListOEM = [
 { id: '3a9945112' 		, title: 'Ліхтар задній правий ( кут )' 						, n: [ '3A9945112', ] 		, cat: { body: 1, light: 1, }, },
 { id: '3A9945108' 		, title: 'Ліхтар задній правий з отвором під замок ( ляда )' 	, n: [ '3A9945108', ] 		, cat: { body: 1, light: 1, }, },
 
- { id: '357805904' 		, title: 'Мухобійка' 											, n: [ '357805904', ] 		, cat: { tuning: 1, body: 1, }, },
+
+//{ id: '357805904' 		, title: 'Мухобійка' 											, n: [ '357805904', ] 		, cat: { tuning: 1, body: 1, }, },
+
 
 { id: '321721173' 		, title: 'Накладка педалі гальма/зчеплення' 					, n: [ '321721173', '6X0721173A01C ', ], cat: { salon: 1, gum: 1, }, },
 
 { id: '3A0837249' 		, title: 'Обмежувач відкриття дверей' 							, n: [ '3A0837249', ], cat: { door: 1, }, },
 
-{ id: '1h0129684' 		, title: 'Патрубок ( Хобот, ДМРВ/дроссель )' 					, n: [ '1H0129627AE', '1H0129684 D', ], cat: { hosepipe: 1, under_hood: 1, plastic: 1, }, },
+{ id: '1h0129684' 		, title: 'Патрубок ( Хобот, ДМРВ/дроссель )' 					, n: [ '1H0129684 D', '1H0129627AE', ], cat: { hosepipe: 1, under_hood: 1, plastic: 1, }, },
 { id: '037103213' 		, title: 'Патрубок вентиляції картерних газів' 					, n: [ '037103213B', ] 		, cat: { hosepipe: 1, under_hood: 1, plastic: 1, }, },
 { id: '037103493' 		, title: 'Патрубок клапану картерних газів' 					, n: [ '037103493AK', ] 	, cat: { hosepipe: 1, under_hood: 1, gum: 1, }, },
 { id: '1h0953513' 		, title: 'Перемикач підрульовий лівий з кнопкою аварійки' 		, n: [ '1H0953513 C', ] 	, cat: { salon: 1, btn: 1, light: 1, }, },
@@ -128,6 +201,18 @@ const arrListOEM = [
 { id: '4b0498201' 		, title: 'Пильник ШРКШ внутрішній' 								, n: [ '4B0498201', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, }, },
 { id: '893498203' 		, title: 'Пильник ШРКШ наружний' 								, n: [ '893498203', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, }, },
 
+{ id: '3a9511105' 		, title: 'Пружина задня' 										, manufacturer: [ 
+																								{ id: 'vag' 		, n: '3A9511105D' 	, }, 
+																								{ id: 'k_f' 		, n: '950295 ' 		, }, 
+																								{ id: 'lesjofors' 	, n: '5295041' 		, }, 
+																								{ id: 'meyle' 		, n: '1007390023' 	, }, 
+																								{ id: 'sachs' 		, n: '996575' 		, }, 
+																									], cat: { chassis: 1, }, },
+
+{ id: '357411105' 		, title: 'Пружина передня' 										, manufacturer: [ 
+																								{ id: 'vag' 		, n: '357411105' 	, }, 
+																									], cat: { chassis: 1, }, },
+
 { id: '165906381' 		, title: 'Реле 30 ( Digifant ), позиція 3' 						, n: [ '165906381', ] 		, cat: { electro: 1, }, },
 { id: '191937503' 		, title: 'Реле 18 ( X-шина ), позиція 4' 						, n: [ '191937503', ] 		, cat: { electro: 1, }, },
 { id: '857951253' 		, title: 'Реле 67 ( бензонасос ), позиція 12' 					, n: [ '857951253', ] 		, cat: { electro: 1, }, },
@@ -143,9 +228,31 @@ const arrListOEM = [
 { id: '3a0837235' 		, title: 'Ручка дверей ( внутрішня ліва )' 						, n: [ '3A083723501C', ] 	, cat: { door: 1, salon: 1, plastic: 1, }, },
 { id: '3a0837236' 		, title: 'Ручка дверей ( внутрішня права )' 					, n: [ '3A083723601C', ] 	, cat: { door: 1, salon: 1, plastic: 1, }, },
 
-{ id: 'n10666302' 		, title: 'Саморіз' 												, n: [ 'N10666302', 'N0139671', ] 		, cat: { fasteners: 1, screw: 1, light: 1, }, }, // противотуманки
+{ id: 'n10666302' 		, title: 'Саморіз' 												, n: [ 'N10666302', 'N0139671', ] 		, cat: { fasteners: 1, screw: 1, light: 1, }, txt: 'Для кріплення противотуманок', }, // противотуманки
 { id: '3a0941779' 		, title: 'Світловідбивач ( передній лівий )' 					, n: [ '3A0941779', ] 		, cat: { body: 1, plastic: 1, light: 1, }, },
 { id: '189538z6e' 		, title: 'Світловідбивач ( передній правий )' 					, n: [ '189538Z6E', ] 		, cat: { body: 1, plastic: 1, light: 1, }, },
+
+
+
+
+
+{ id: '357407613' 		, title: 'Ступиця 4*100 передня ( 2E/AGG )' 					, manufacturer: [ { id: 'vag', n: '357407613B', }, ], cat: { chassis: 1, }, },
+{ id: '1h0407613' 		, title: 'Ступиця 5*100 передня ( ABF )' 						, manufacturer: [ { id: 'vag', n: '1H0407613B', }, ], cat: { chassis: 1, }, },
+
+
+{ id: '1h0615423' 		, title: 'Суппорт гальмівний задній лівий ( корпус )' 			, manufacturer: [ { id: 'vag', n: '1H0615423', }, ], cat: { chassis: 1, }, },
+{ id: '1h0615424' 		, title: 'Суппорт гальмівний задній правий ( корпус )' 			, manufacturer: [ { id: 'vag', n: '1H0615424', }, ], cat: { chassis: 1, }, },
+{ id: '1h0615425' 		, title: 'Суппорт гальмівний задній лівий ( скоба )' 			, manufacturer: [ { id: 'vag', n: '1H0615425', }, ], cat: { chassis: 1, }, },
+{ id: '1h0615426' 		, title: 'Суппорт гальмівний задній правий ( скоба )' 			, manufacturer: [ { id: 'vag', n: '1H0615426', }, ], cat: { chassis: 1, }, },
+
+
+
+
+
+
+
+
+
 
 { id: '037905205' 		, title: 'Трамблер' 											, n: [ '037905205', ] 		, cat: { electro: 1, under_hood: 1, }, },
 { id: '052905225' 		, title: 'Трамблер ( бігунок )' 								, n: [ '052905225 C', ] 	, cat: { electro: 1, under_hood: 1, }, },
@@ -163,8 +270,16 @@ const arrListOEM = [
 
 
 
-{ id: 'osram_2352mfx6' 		, title: 'Лампочка щитка приладів' 							, n: [ '2352MFX6', ], manufacturer: 'osram', cat: { electro: 1, lamp: 1, salon: 1, }, },
-{ id: 'philips_12626cp' 	, title: 'Лампочка щитка приладів' 							, n: [ '12626CP', ], manufacturer: 'philips', cat: { electro: 1, lamp: 1, salon: 1, }, },
+{ id: 'panel_lamp' 		, title: 'Лампочка щитка приладів' 								, manufacturer: [ 
+																								{ id: 'bosch' 		, n: '1987302236' 		, }, 
+																								{ id: 'hella' 		, n: '8GS006677121' 	, }, 
+																								{ id: 'm_marelli' 	, n: '002053100000' 	, }, 
+																								{ id: 'narva' 		, n: '170543000' 		, }, 
+																								{ id: 'osram' 		, n: '2352MFX6' 		, }, 
+																								{ id: 'philips' 	, n: '12626CP' 			, }, 
+
+																									] , cat: { electro: 1, lamp: 1, salon: 1, }, },
+
 
 
 
