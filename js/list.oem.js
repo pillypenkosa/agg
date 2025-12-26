@@ -32,29 +32,31 @@
 
 const arrListOEMcat = [
 
-	{ id: 'bolt' 		, title: 'Болти' 						, } ,
-	{ id: 'gum' 		, title: 'Гумові вироби' 				, } ,
-	{ id: 'door' 		, title: 'Двері' 						, } ,
-	{ id: 'motor' 		, title: 'Двигун' 						, } ,
-	{ id: 'mirror' 		, title: 'Дзеркала' 					, } ,
-	{ id: 'electro' 	, title: 'Електрика' 					, } ,
-	{ id: 'btn' 		, title: 'Кнопки, перемикачі' 			, } ,
-	{ id: 'gearbox' 	, title: 'КПП' 							, } ,
-	{ id: 'fasteners' 	, title: 'Кріплення' 					, } ,
-	{ id: 'body' 		, title: 'Кузов' 						, } ,
-	{ id: 'lamp' 		, title: 'Лампи' 						, } ,
-	{ id: 'under_hood' 	, title: 'Під капотом' 					, } ,
-	{ id: 'plastic' 	, title: 'Пластик' 						, } ,
-	{ id: 'gasket' 		, title: 'Прокладки' 					, } ,
-	{ id: 'salon' 		, title: 'Салон' 						, } ,
-	{ id: 'screw' 		, title: 'Саморізи' 					, } ,
-	{ id: 'light' 		, title: 'Світло, освітлення' 			, } ,
-	{ id: 'glass' 		, title: 'Скло' 						, } ,
-	{ id: 'bracket' 	, title: 'Скоби' 						, } ,
-	{ id: 'tuning' 		, title: 'Тюнінг' 						, } ,
-	{ id: 'filter' 		, title: 'Фільтри' 						, } ,
-	{ id: 'chassis' 	, title: 'Ходова частина' 				, } ,
-	{ id: 'hosepipe' 	, title: 'Шланги, патрубки' 			, } ,
+	{ id: 'bolt' 		, title: 'Болти' 							, } ,
+	{ id: 'gum' 		, title: 'Гума' 							, } ,
+	{ id: 'door' 		, title: 'Двері' 							, } ,
+	{ id: 'motor' 		, title: 'Двигун' 							, } ,
+	{ id: 'mirror' 		, title: 'Дзеркала' 						, } ,
+	{ id: 'electro' 	, title: 'Електрика' 						, } ,
+	{ id: 'relay' 		, title: 'Електрика. Реле' 					, } ,
+	{ id: 'btn' 		, title: 'Електрика. Кнопки/перемикачі' 	, } ,
+	{ id: 'lamp' 		, title: 'Електрика. Лампи' 				, } ,
+	{ id: 'light' 		, title: 'Електрика. Світло/освітлення' 	, } ,
+	{ id: 'gearbox' 	, title: 'КПП' 								, } ,
+	{ id: 'fasteners' 	, title: 'Кріплення' 						, } ,
+	{ id: 'body' 		, title: 'Кузов' 							, } ,
+	{ id: 'duster' 		, title: 'Пильники' 						, } ,
+	{ id: 'under_hood' 	, title: 'Під капотом' 						, } ,
+	{ id: 'plastic' 	, title: 'Пластик' 							, } ,
+	{ id: 'gasket' 		, title: 'Прокладки' 						, } ,
+	{ id: 'salon' 		, title: 'Салон' 							, } ,
+	{ id: 'screw' 		, title: 'Саморізи' 						, } ,
+	{ id: 'glass' 		, title: 'Скло' 							, } ,
+	{ id: 'bracket' 	, title: 'Скоби' 							, } ,
+	{ id: 'tuning' 		, title: 'Тюнінг' 							, } ,
+	{ id: 'filter' 		, title: 'Фільтри' 							, } ,
+	{ id: 'chassis' 	, title: 'Ходова частина' 					, } ,
+	{ id: 'hosepipe' 	, title: 'Шланги/патрубки' 			, } ,
 
 
 
@@ -86,7 +88,7 @@ const arrListOEM = [
 																							{ id: 'vag' 		, n: '357513031S' 	, }, 
 																								], cat: { chassis: 1, }, },
 
-{ id: '357413031' 		, title: 'Амортизатор передній' 									, manufacturer: [ 
+{ id: '357413031' 		, title: 'Амортизатор передній' 								, manufacturer: [ 
 																							{ id: 'vag' 		, n: '357413031' 	, }, 
 																								], cat: { chassis: 1, }, },
 
@@ -140,15 +142,11 @@ const arrListOEM = [
 { id: '3b0857537' 		, title: 'Дзеркало ( корпус )' 									, n: [ '3B0857537 BGRU', ], cat: { mirror: 1, body: 1, }, },
 
 
-{ id: '6n0905865' 		, title: 'Замок запалювання ( контактна група )' 					, manufacturer: [ 
+{ id: '6n0905865' 		, title: 'Замок запалювання ( контактна група )' 			, manufacturer: [ 
 																							{ id: 'vag' 	, n: '6N0905865' 	, }, 
 																							{ id: 'vag' 	, n: '357905865' 	, }, 
 
-
 																								], cat: { electro: 1, salon: 1, }, },
-
-
-
 
 { id: '357905855' 		, title: 'Замок запалювання ( лічинка )' 					, manufacturer: [ 
 																							{ id: 'vag' 	, n: '357905855B' 	, }, 
@@ -156,18 +154,10 @@ const arrListOEM = [
 
 																								], cat: { electro: 1, salon: 1, }, },
 
-
-
-
-
-
-
-{ id: '3a0419091' 		, title: 'Кермо' 												, manufacturer: [ { id: 'vag', n: '3A0419091', }, ], cat: { salon: 1, }, },
-
-
-{ id: '3a0947561' 		, title: 'Кнопка/кінцевик закриття дверей' 						, n: [ '3A0947561A', ] 		, cat: { door: 1, salon: 1, btn: 1, }, },
-{ id: '3A0959855B' 		, title: 'Кнопка ЕСП ( передня права )' 						, n: [ '3A0959855B', ] 		, cat: { door: 1, glass: 1, salon: 1, btn: 1, }, },
-{ id: '02a945413' 		, title: 'Кнопка/датчик ввімкнення ліхтарів заднього ходу' 		, n: [ '02A945413', ] 		, cat: { under_hood: 1, btn: 1, gearbox: 1, light: 1, }, },
+{ id: '3a0419091' 		, title: 'Кермо' 											, manufacturer: [ { id: 'vag', n: '3A0419091', }, ] 	, cat: { salon: 1, }, },
+{ id: '3a0947561' 		, title: 'Кнопка/кінцевик закриття дверей' 					, manufacturer: [ { id: 'vag', n: '3A0947561A', }, ] 	, cat: { door: 1, salon: 1, btn: 1, }, },
+{ id: '3A0959855B' 		, title: 'Кнопка ЕСП ( передня права )' 					, manufacturer: [ { id: 'vag', n: '3A0959855B', }, ] 	, cat: { door: 1, glass: 1, salon: 1, btn: 1, }, },
+{ id: '02a945413' 		, title: 'Кнопка/датчик ввімкнення ліхтарів заднього ходу' 	, manufacturer: [ { id: 'vag', n: '02A945413', }, ] 	, cat: { under_hood: 1, btn: 1, gearbox: 1, light: 1, }, },
 
 
 
@@ -175,10 +165,13 @@ const arrListOEM = [
 //{ id: '' 		, title: 'Колодки гальмівні задній' 						, manufacturer: [ { id: 'vag', n: '', }, ], cat: { chassis: 1, }, },
 
 
+{ id: '6n0905104' 		, title: 'Котушка запалення' 								, manufacturer: [ 
+																						{ id: 'vag', n: '6N0905104 ', }, 
+																						{ id: 'beru', n: 'ZSE001', }, 
 
-
-
-
+																							], cat: { electro: 1, under_hood: 1, }, shop: [ 
+																								//{ title: 'avto.pro', href: 'https://avto.pro/part-6N0905104-VAG-305/', }, 
+																									], },
 
 
 
@@ -212,7 +205,7 @@ const arrListOEM = [
 
 
 
-{ id: '3a0947565' 		, title: 'Пильник кінцевика дверей' 							, n: [ '3A0947565', ] 		, cat: { door: 1, btn: 1, gum: 1, }, },
+{ id: '3a0947565' 		, title: 'Пильник кінцевика дверей' 							, n: [ '3A0947565', ] 		, cat: { door: 1, btn: 1, gum: 1, duster: 1, }, },
 
 
 
@@ -220,36 +213,37 @@ const arrListOEM = [
 
 
 
-{ id: '191498201' 		, title: 'Пильник ШРКШ ( внутрішній лівий )' 					, n: [ '191498201B', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, }, },
-{ id: '191407282' 		, title: 'Пильник ШРКШ ( внутрішній правий )' 					, n: [ '191407282E', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, }, },
-{ id: '893498203' 		, title: 'Пильник ШРКШ ( зовнішні )' 							, n: [ '893498203', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, }, },
+{ id: '191498201' 		, title: 'Пильник ШРКШ ( внутрішній лівий )' 					, n: [ '191498201B', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, duster: 1, }, },
+{ id: '191407282' 		, title: 'Пильник ШРКШ ( внутрішній правий )' 					, n: [ '191407282E', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, duster: 1, }, },
+{ id: '893498203' 		, title: 'Пильник ШРКШ ( зовнішні )' 							, n: [ '893498203', ] 		, cat: { under_hood: 1, chassis: 1, gum: 1, duster: 1, }, },
 
 { id: '3a9511105' 		, title: 'Пружина задня' 										, manufacturer: [ 
-																								{ id: 'vag' 		, n: '3A9511105D' 	, }, 
-																								{ id: 'k_f' 		, n: '950295 ' 		, }, 
-																								{ id: 'lesjofors' 	, n: '5295041' 		, }, 
-																								{ id: 'meyle' 		, n: '1007390023' 	, }, 
-																								{ id: 'sachs' 		, n: '996575' 		, }, 
-																									], cat: { chassis: 1, }, },
+																							{ id: 'vag' 		, n: '3A9511105D' 	, }, 
+																							{ id: 'k_f' 		, n: '950295 ' 		, }, 
+																							{ id: 'lesjofors' 	, n: '5295041' 		, }, 
+																							{ id: 'meyle' 		, n: '1007390023' 	, }, 
+																							{ id: 'sachs' 		, n: '996575' 		, }, 
+																								], cat: { chassis: 1, }, },
 
 { id: '357411105' 		, title: 'Пружина передня' 										, manufacturer: [ 
 																								{ id: 'vag' 		, n: '357411105' 	, }, 
 																									], cat: { chassis: 1, }, },
 
-{ id: '165906381' 		, title: 'Реле 30 ( Digifant ), позиція 3' 						, n: [ '165906381', ] 		, cat: { electro: 1, }, },
-{ id: '191937503' 		, title: 'Реле 18 ( X-шина ), позиція 4' 						, n: [ '191937503', ] 		, cat: { electro: 1, }, },
-{ id: '857951253' 		, title: 'Реле 67 ( бензонасос ), позиція 12' 					, n: [ '857951253', ] 		, cat: { electro: 1, }, },
-{ id: '191906383' 		, title: 'Реле 167 ( бензонасос ), позиція 12' 					, n: [ '191906383 C', ] 	, cat: { electro: 1, }, },
-{ id: '321955531' 		, title: 'Реле 19 ( дворники, програмується ), позиція 8' 		, n: [ '321955531 A', ] 	, cat: { electro: 1, }, },
-{ id: '357955531' 		, title: 'Реле 99 ( дворники, програмується ), позиція 8' 		, n: [ '357955531', ] 		, cat: { electro: 1, }, },
-{ id: '191955529' 		, title: 'Реле 72 ( дворник задній ), позиція 2' 				, n: [ '191955529', ] 		, cat: { electro: 1, }, },
-{ id: '3a0951307' 		, title: 'Реле 36 ( зумер ), позиція 9' 						, n: [ '3A0951307', ] 		, cat: { electro: 1, }, },
-{ id: '191953227' 		, title: 'Реле 21 ( поворотники ), позиція 6' 					, n: [ '191953227 A', ] 	, cat: { electro: 1, }, },
-{ id: '1h0953227' 		, title: 'Реле 191 ( поворотники ), позиція 6' 					, n: [ '1H0953227', ] 		, cat: { electro: 1, }, },
-{ id: '431953231' 		, title: 'Реле 22 ( поворотники, причіп ), позиція 6' 			, n: [ '431953231', ] 		, cat: { electro: 1, }, },
-{ id: '141951253' 		, title: 'Реле 53 ( сигнал ), позиція 11' 						, n: [ '141951253 B', ] 	, cat: { electro: 1, }, },
-{ id: '3a0837235' 		, title: 'Ручка дверей ( внутрішня ліва )' 						, n: [ '3A083723501C', ] 	, cat: { door: 1, salon: 1, plastic: 1, }, },
-{ id: '3a0837236' 		, title: 'Ручка дверей ( внутрішня права )' 					, n: [ '3A083723601C', ] 	, cat: { door: 1, salon: 1, plastic: 1, }, },
+{ id: '165906381' 		, title: 'Реле 30 ( Digifant ), позиція 3' 						, manufacturer: [ { id: 'vag', n: '165906381', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '191937503' 		, title: 'Реле 18 ( X-шина ), позиція 4' 						, manufacturer: [ { id: 'vag', n: '191937503', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '857951253' 		, title: 'Реле 67 ( бензонасос ), позиція 12' 					, manufacturer: [ { id: 'vag', n: '857951253', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '191906383' 		, title: 'Реле 167 ( бензонасос ), позиція 12' 					, manufacturer: [ { id: 'vag', n: '191906383 C', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '321955531' 		, title: 'Реле 19 ( дворники, програмується ), позиція 8' 		, manufacturer: [ { id: 'vag', n: '321955531 A', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '357955531' 		, title: 'Реле 99 ( дворники, програмується ), позиція 8' 		, manufacturer: [ { id: 'vag', n: '357955531', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '191955529' 		, title: 'Реле 72 ( дворник задній ), позиція 2' 				, manufacturer: [ { id: 'vag', n: '191955529', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '3a0951307' 		, title: 'Реле 36 ( зумер ), позиція 9' 						, manufacturer: [ { id: 'vag', n: '3A0951307', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '191953227' 		, title: 'Реле 21 ( поворотники ), позиція 6' 					, manufacturer: [ { id: 'vag', n: '191953227 A', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '1h0953227' 		, title: 'Реле 191 ( поворотники ), позиція 6' 					, manufacturer: [ { id: 'vag', n: '1H0953227', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '431953231' 		, title: 'Реле 22 ( поворотники, причіп ), позиція 6' 			, manufacturer: [ { id: 'vag', n: '431953231', }, ] 		, cat: { electro: 1, relay: 1, }, },
+{ id: '141951253' 		, title: 'Реле 53 ( сигнал ), позиція 11' 						, manufacturer: [ { id: 'vag', n: '141951253 B', }, ] 		, cat: { electro: 1, relay: 1, }, },
+
+{ id: '3a0837235' 		, title: 'Ручка дверей ( внутрішня ліва )' 						, manufacturer: [ { id: 'vag', n: '3A083723501C', }, ] 		, cat: { door: 1, salon: 1, plastic: 1, }, },
+{ id: '3a0837236' 		, title: 'Ручка дверей ( внутрішня права )' 					, manufacturer: [ { id: 'vag', n: '3A083723601C', }, ] 		, cat: { door: 1, salon: 1, plastic: 1, }, },
 
 { id: 'n10666302' 		, title: 'Саморіз' 												, n: [ 'N10666302', 'N0139671', ] 		, cat: { fasteners: 1, screw: 1, light: 1, }, txt: 'Для кріплення противотуманок', }, // противотуманки
 { id: '3a0941779' 		, title: 'Світловідбивач ( передній лівий )' 					, n: [ '3A0941779', ] 		, cat: { body: 1, plastic: 1, light: 1, }, },
@@ -275,19 +269,16 @@ const arrListOEM = [
 
 
 
-{ id: '037905205' 		, title: 'Трамблер' 											, n: [ '037905205', ] 		, cat: { electro: 1, under_hood: 1, }, },
-{ id: '052905225' 		, title: 'Трамблер ( бігунок )' 								, n: [ '052905225 C', ] 	, cat: { electro: 1, under_hood: 1, }, },
-{ id: '051905207' 		, title: 'Трамблер ( кришка )' 									, n: [ '051905207', ] 		, cat: { electro: 1, under_hood: 1, }, },
-
-{ id: '1j0035350' 		, title: 'Ущільнювач/прокладка під антену' 						, n: [ '1J0035350E', ] 		, cat: { gasket: 1, gum: 1, plastic: 1, body: 1, }, },
-
-{ id: '191955985' 		, title: 'Форсунка омивача скла лобового' 						, n: [ '191955985A', ] 		, cat: { glass: 1, body: 1, }, },
-{ id: '333955985' 		, title: 'Форсунка омивача скла заднього' 						, n: [ '333955985', ] 		, cat: { glass: 1, body: 1, }, },
-{ id: '191857559' 		, title: 'Фіксатор сонцезахисного козирка' 						, n: [ '191857559', ] 		, cat: { salon: 1, plastic: 1, }, },
-{ id: '191129620' 		, title: 'Фільтр повітряний ( ДМРВ )' 							, n: [ '191129620', ] 		, cat: { under_hood: 1, filter: 1, }, },
-{ id: '3a0819644' 		, title: 'Фільтр салону' 										, n: [ '3A0819644', ] 		, cat: { under_hood: 1, salon: 1, filter: 1, }, },
-
-{ id: '1z0863831' 		, title: 'Шумоізоляція капоту' 									, n: [ '1Z0863831A', ] 		, cat: { body: 1, under_hood: 1, }, },
+{ id: '037905205' 		, title: 'Трамблер' 											, manufacturer: [ { id: 'vag', n: '037905205', }, ] 		, cat: { electro: 1, under_hood: 1, }, },
+{ id: '052905225' 		, title: 'Трамблер ( бігунок )' 								, manufacturer: [ { id: 'vag', n: '052905225 C', }, ] 		, cat: { electro: 1, under_hood: 1, }, },
+{ id: '051905207' 		, title: 'Трамблер ( кришка )' 									, manufacturer: [ { id: 'vag', n: '051905207', }, ] 		, cat: { electro: 1, under_hood: 1, }, },
+{ id: '1j0035350' 		, title: 'Ущільнювач/прокладка під антену' 						, manufacturer: [ { id: 'vag', n: '1J0035350E', }, ] 		, cat: { gasket: 1, gum: 1, plastic: 1, body: 1, }, },
+{ id: '191955985' 		, title: 'Форсунка омивача скла лобового' 						, manufacturer: [ { id: 'vag', n: '191955985A', }, ] 		, cat: { glass: 1, body: 1, }, },
+{ id: '333955985' 		, title: 'Форсунка омивача скла заднього' 						, manufacturer: [ { id: 'vag', n: '333955985', }, ] 		, cat: { glass: 1, body: 1, }, },
+{ id: '191857559' 		, title: 'Фіксатор сонцезахисного козирка' 						, manufacturer: [ { id: 'vag', n: '191857559', }, ] 		, cat: { salon: 1, plastic: 1, }, },
+{ id: '191129620' 		, title: 'Фільтр повітряний ( ДМРВ )' 							, manufacturer: [ { id: 'vag', n: '191129620', }, ] 		, cat: { under_hood: 1, filter: 1, }, },
+{ id: '3a0819644' 		, title: 'Фільтр салону' 										, manufacturer: [ { id: 'vag', n: '3A0819644', }, ] 		, cat: { under_hood: 1, salon: 1, filter: 1, }, },
+{ id: '1z0863831' 		, title: 'Шумоізоляція капоту' 									, manufacturer: [ { id: 'vag', n: '1Z0863831A', }, ] 		, cat: { body: 1, under_hood: 1, }, },
 
 
 

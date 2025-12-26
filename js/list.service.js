@@ -72,6 +72,67 @@ const arrListService = [
 	],
 },
 {
+	id: '20251226_gkn_out', title: 'Пильники ШРУСів ( зовнішні )', date: '2025-12-26', act: 'r', 
+	keyval: [
+		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
+		{ manufacturer: 'GKN-Spidan', },
+		{ k: 'Код' 						, v: '22554' 		, },
+		{ k: 'Код VAG' 					, v: '893498203' 	, },
+		{ backspace: true },
+
+		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
+		{ k: 'Дата' 				, v: '2025-12-17' 			, },
+		{ k: 'Ціна' 				, v: '700 грн за 2 шт ' 	, },
+		{ backspace: true },
+
+	],
+},
+{
+	id: '20251226_gkn_in_l', title: 'Пильник ШРУСа внутрішній ( лівий )', date: '2025-12-26', act: 'r', 
+	keyval: [
+		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
+		{ manufacturer: 'GKN-Spidan', },
+		{ k: 'Код' 						, v: '23514' 		, },
+		{ k: 'Код VAG' 					, v: '191498201B' 	, },
+		{ backspace: true },
+
+		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
+		{ k: 'Дата' 				, v: '2025-12-17' 			, },
+		//{ k: 'Ціна' 				, v: '1200 грн за 2 шт внутрішніх' 		, },
+		{ backspace: true },
+
+	],
+},
+{
+	id: '20251226_gkn_in_r', title: 'Пильник ШРУСа внутрішній ( правий )', date: '2025-12-26', act: 'r', 
+	keyval: [
+		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
+		{ manufacturer: 'GKN-Spidan', },
+		{ k: 'Код' 						, v: '26101' 		, },
+		{ k: 'Код VAG' 					, v: '191498202' 	, },
+		{ k: 'Код VAG' 					, v: '191407282E' 	, },
+		{ backspace: true },
+
+		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
+		{ k: 'Дата' 				, v: '2025-12-17' 						, },
+		{ k: 'Ціна' 				, v: '1200 грн за 2 шт внутрішніх' 		, },
+		{ backspace: true },
+
+	],
+},
+{
 	id: '20251226_support_repair_kit', title: 'Ремкомплекти супортів', date: '2025-12-26', act: 'r',
 	keyval: [
 
@@ -174,67 +235,7 @@ const arrListService = [
 
 	],
 },
-{
-	id: '20251226_gkn_out', title: 'Пильники ШРУСів ( зовнішні )', date: '2025-12-26', act: 'r', 
-	keyval: [
-		
-		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
-		{ k: 'Пробіг' 	, v: '329955 км' 			, },
-		{ backspace: true },
 
-		{ manufacturer: 'GKN-Spidan', },
-		{ k: 'Код' 						, v: '22554' 		, },
-		{ k: 'Код VAG' 					, v: '893498203' 	, },
-		{ backspace: true },
-
-		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
-		{ k: 'Дата' 				, v: '2025-12-17' 			, },
-		{ k: 'Ціна' 				, v: '700 грн за 2 шт ' 	, },
-		{ backspace: true },
-
-	],
-},
-{
-	id: '20251226_gkn_in_l', title: 'Пильник ШРУСа внутрішній ( лівий )', date: '2025-12-26', act: 'r', 
-	keyval: [
-		
-		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
-		{ k: 'Пробіг' 	, v: '329955 км' 			, },
-		{ backspace: true },
-
-		{ manufacturer: 'GKN-Spidan', },
-		{ k: 'Код' 						, v: '23514' 		, },
-		{ k: 'Код VAG' 					, v: '191498201B' 	, },
-		{ backspace: true },
-
-		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
-		{ k: 'Дата' 				, v: '2025-12-17' 			, },
-		//{ k: 'Ціна' 				, v: '1200 грн за 2 шт внутрішніх' 		, },
-		{ backspace: true },
-
-	],
-},
-{
-	id: '20251226_gkn_in_r', title: 'Пильник ШРУСа внутрішній ( правий )', date: '2025-12-26', act: 'r', 
-	keyval: [
-		
-		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
-		{ k: 'Пробіг' 	, v: '329955 км' 			, },
-		{ backspace: true },
-
-		{ manufacturer: 'GKN-Spidan', },
-		{ k: 'Код' 						, v: '26101' 		, },
-		{ k: 'Код VAG' 					, v: '191498202' 	, },
-		{ k: 'Код VAG' 					, v: '191407282E' 	, },
-		{ backspace: true },
-
-		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
-		{ k: 'Дата' 				, v: '2025-12-17' 						, },
-		{ k: 'Ціна' 				, v: '1200 грн за 2 шт внутрішніх' 		, },
-		{ backspace: true },
-
-	],
-},
 {
 	id: '20251226_sachs_f', title: 'Відбійники амортизаторів передніх', date: '2025-12-26', act: 'r', 
 	keyval: [
