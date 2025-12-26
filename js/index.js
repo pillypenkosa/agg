@@ -16,7 +16,7 @@ const htmlLinkSign = '&#11023;';
 
 
 
-document.querySelector( 'title' ).innerHTML = 'Goods ' + appVersion;
+document.querySelector( 'title' ).innerHTML = 'AGG ' + appVersion;
 
 
 

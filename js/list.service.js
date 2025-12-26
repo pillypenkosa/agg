@@ -55,11 +55,53 @@ const arrListService = [
 
 
 
-
 {
-	id: '20251217_bilstein_f', title: 'Амортизатори газо-масляні ( передні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_antifreeze', title: 'Антифриз ', date: '2025-12-26', act: 'r',
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+	],
+},
+{
+	id: '20251226_brake_fluid', title: 'Рідина гальмівна', date: '2025-12-26', act: 'r',
+	keyval: [
+		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+	],
+},
+{
+	id: '20251226_support_repair_kit', title: 'Ремкомплекти супортів', date: '2025-12-26', act: 'r',
+	keyval: [
+
+		{ k: 'Ремкрмплекти' 	, v: '...начебто всі 4' 			, },
+		{ backspace: true },
+		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+	],
+},
+{
+	id: '20251226_bearing', title: 'Підшипник колес', date: '2025-12-26', act: 'r',
+	keyval: [
+		
+
+		{ station: 'merefa_auto_service_center' , }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 		, },
+		{ backspace: true },
+
+		{ k: 'Підшипник колес' 	, v: '2 задніх' 	, },
+	],
+},
+{
+	id: '20251226_bilstein_f', title: 'Амортизатори газо-масляні ( передні )', date: '2025-12-26', act: 'r', 
+	keyval: [
+		
+		{ station: 'merefa_auto_service_center' , }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'bilstein', },
 		{ k: 'Код' 					, v: '22-045768 VNE-4576' 		, },
 		//{ k: 'Код VAG' 					, v: '' 	, },
@@ -73,9 +115,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_bilstein_b', title: 'Амортизатори газо-масляні ( задні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_bilstein_b', title: 'Амортизатори газо-масляні ( задні )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'bilstein', },
 		{ k: 'Код' 						, v: '19-019949 BNE 1994' 		, },
 		//{ k: 'Код VAG' 					, v: '' 	, },
@@ -89,9 +135,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_lesjofors_f', title: 'Пружини ( передні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_lesjofors_f', title: 'Пружини ( передні )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'lesjofors', },
 		{ k: 'Код' 						, v: '4095026' 		, },
 		{ k: 'Код VAG' 					, v: '1J0411105AN' 	, },
@@ -105,9 +155,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_lesjofors_b', title: 'Пружини ( задні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_lesjofors_b', title: 'Пружини ( задні )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'lesjofors', },
 		{ k: 'Код' 						, v: '4295026' 		, },
 		{ k: 'Код VAG' 					, v: '3A9511105C' 	, },
@@ -121,9 +175,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_gkn_in_l', title: 'Пильники ШРУСів ( зовнішні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_gkn_out', title: 'Пильники ШРУСів ( зовнішні )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'GKN-Spidan', },
 		{ k: 'Код' 						, v: '22554' 		, },
 		{ k: 'Код VAG' 					, v: '893498203' 	, },
@@ -137,9 +195,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_gkn_in_l', title: 'Пильник ШРУСа ( внутрішній лівий )', date: '2025-12-17', act: 'b', 
+	id: '20251226_gkn_in_l', title: 'Пильник ШРУСа внутрішній ( лівий )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'GKN-Spidan', },
 		{ k: 'Код' 						, v: '23514' 		, },
 		{ k: 'Код VAG' 					, v: '191498201B' 	, },
@@ -153,9 +215,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_gkn_in_r', title: 'Пильник ШРУСа ( внутрішній правий )', date: '2025-12-17', act: 'b', 
+	id: '20251226_gkn_in_r', title: 'Пильник ШРУСа внутрішній ( правий )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'GKN-Spidan', },
 		{ k: 'Код' 						, v: '26101' 		, },
 		{ k: 'Код VAG' 					, v: '191498202' 	, },
@@ -170,9 +236,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_sachs_f', title: 'Відбійники амортизаторів передніх', date: '2025-12-17', act: 'b', 
+	id: '20251226_sachs_f', title: 'Відбійники амортизаторів передніх', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'sachs' 		, },
 		{ k: 'Код' 						, v: '1748392000' 	, },
 		{ backspace: true },
@@ -185,9 +255,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_kayaba_b', title: 'Відбійники амортизаторів задніх', date: '2025-12-17', act: 'b', 
+	id: '20251226_kayaba_b', title: 'Відбійники амортизаторів задніх', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'kayaba' 		, },
 		{ k: 'Код' 						, v: '910087' 	, },
 		{ backspace: true },
@@ -200,9 +274,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_lemforder', title: 'Верхні опори амортизаторів передніх + підшипники', date: '2025-12-17', act: 'b', 
+	id: '20251226_lemforder', title: 'Верхні опори амортизаторів передніх + підшипники', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'lemforder' 		, },
 		{ k: 'Код' 						, v: '26642 01' 	, },
 		{ backspace: true },
@@ -215,9 +293,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_block_f', title: 'Колодки гальмівні ( передні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_block_f', title: 'Колодки гальмівні ( передні )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'trw' 		, },
 		{ k: 'Код' 						, v: 'GDB 1048' 	, },
 		{ k: 'Код VAG' 					, v: '357698151A' 	, },
@@ -233,9 +315,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_block_b', title: 'Колодки гальмівні дискові ( задні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_block_b', title: 'Колодки гальмівні дискові ( задні )', date: '2025-12-26', act: 'r', 
 	keyval: [
-		
+				
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'trw' 		, },
 		{ k: 'Код' 						, v: 'GDB 1330' 	, },
 		{ backspace: true },
@@ -249,9 +335,13 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_trw_f', title: 'Диски гальмівні вентильовані ( передні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_trw_f', title: 'Диски гальмівні вентильовані ( передні )', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'trw' 		, },
 		{ k: 'Код' 						, v: 'DF 1533' 			, },
 		{ k: 'Код VAG' 					, v: '6N0615301D' 		, },
@@ -268,9 +358,26 @@ const arrListService = [
 	],
 },
 {
-	id: '20251217_trw_b', title: 'Диски гальмівні ( задні )', date: '2025-12-17', act: 'b', 
+	id: '20251226_screw', title: 'Гвинти кріплення дисків гальмівних передніх', date: '2025-12-26', act: 'r', 
 	keyval: [
 		
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
+
+		{ k: 'Гвинти' 						, v: 'кількість не з\'ясована' 		, },
+
+	],
+},
+{
+	id: '20251226_trw_b', title: 'Диски гальмівні ( задні )', date: '2025-12-26', act: 'r', 
+	keyval: [
+				
+		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
+		{ k: 'Пробіг' 	, v: '329955 км' 			, },
+		{ backspace: true },
+
 		{ manufacturer: 'trw' 		, },
 		{ k: 'Код' 						, v: 'DF 1529' 			, },
 		{ k: 'Код VAG' 					, v: '6N0615601' 		, },
@@ -334,6 +441,21 @@ const arrListService = [
 		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
 		{ k: 'Дата' 				, v: '2025-12-17' 		, },
 		{ k: 'Ціна' 				, v: '80 грн' 			, },
+		{ backspace: true },
+
+	],
+},
+{
+	id: '20251217_vag', title: 'Скоби/фіксатори дверних ручок', date: '2025-12-17', act: 'b', 
+	keyval: [
+		
+		{ manufacturer: 'VAG' 		, },
+		{ k: 'Код VAG' 				, v: '357837242' 	, },
+		{ backspace: true },
+
+		{ shop: 'kharkiv_losk_2_4' 	, }, // Кравцов Максим
+		{ k: 'Дата' 				, v: '2025-12-17' 		, },
+		{ k: 'Ціна' 				, v: '250 грн за 4 шт' 	, },
 		{ backspace: true },
 
 	],
