@@ -9,11 +9,12 @@
 
 const arrListServiceAct = [
 
-	{ id: 'r' 			, title: 'заміна' 		, }, 	// replace 
-	{ id: 'b' 			, title: 'покупка' 		, }, 	// buy
-	{ id: 'i' 			, title: 'установка' 	, }, 	// install 
+	{ id: 'r' 			, title: 'заміна' 			, }, 	// replace 
+	{ id: 'b' 			, title: 'покупка' 			, }, 	// buy
+	{ id: 'i' 			, title: 'установка' 		, }, 	// install 
 	
-	{ id: 'insurance' 	, title: 'страхування' 	, }, 	// 
+	{ id: 'insurance' 	, title: 'страхування' 		, }, 	// 
+	{ id: 'other' 		, title: 'інші дії' 		, }, 	// 
 
 
 ];
@@ -50,13 +51,16 @@ const arrListService = [
 
 
 
-
-
-
-
-
 {
-	id: '20251226_antifreeze', title: 'Антифриз ', date: '2025-12-26', act: 'r',
+	id: '20251230_', title: 'Розвал/сходження', date: '2025-12-30', act: 'other',
+	keyval: [
+		
+		{ station: 'merefa_auto_service_center' 	, }, // Олексій 
+		{ k: 'Пробіг' 	, v: '330010 км' 			, },
+	],
+},
+{
+	id: '20251226_antifreeze', title: 'Антифриз', date: '2025-12-26', act: 'r',
 	keyval: [
 		
 		{ station: 'merefa_auto_service_center' 	, }, // Денищенко Віталій
