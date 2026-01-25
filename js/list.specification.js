@@ -89,16 +89,18 @@ const arrListSpecification = [
 	id: 'battery', title: 'Акумулятор', 
 	keyval: [
 		
+		{ k: 'Виробник' 		, v: 'Zap ' 									, },
+		{ k: 'Модель' 			, v: 'Batteries Since 1925' 					, },
+		{ k: 'Серія' 			, v: 'Silver' 									, },
+		{ k: 'Напруга' 			, v: '12 V' 									, },
+		{ k: 'Ємність' 			, v: '65 Ah' 									, },
+		{ k: 'Ток пусковий' 	, v: '640 A(EN)' 								, },
+		{ k: 'Код' 				, v: '565 85' 									, },
+		{ k: 'Корпус' 			, v: 'L2' 										, },
+		{ k: 'Розміри' 			, v: '240*175*190 ( 163 на рівні клем )' 		, },
+		{ k: 'Плюс' 			, v: 'R+ ( праворуч/знизу )' 					, },
+		{ k: 'Barcode' 			, v: '5 903665 007078' 							, },
 
-		//{ k: 'Акумулятор' 		, v: 'Exide' 				, },
-		//{ k: 'Модель' 			, v: 'Premium EA 640' 		, },
-		//{ k: '' 				, v: 'Carbon Boost 2.0' 	, },
-		//{ k: '' 				, v: '12 V' 				, },
-		//{ k: '' 				, v: '64 Ah' 				, },
-		//{ k: '' 				, v: '640 A(EN)' 			, },
-		//{ k: 'exide.info' 		, v: 'exide.info' 			, href: 'https://www.exidegroup.com/eu/en/battery/EA640', },
-		//{ k: '' 				, v: 'UK:027TE' 			, },
-		//{ k: 'barcode' 			, v: '3 661024 034227' 		, },
 	],
 },
 {
