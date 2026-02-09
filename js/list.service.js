@@ -52,6 +52,38 @@ const arrListService = [
 
 
 {
+	id: '20260209_exide', title: 'Акумулятор Exide', date: '2026-02-09', act: 'r', 
+	keyval: [
+		
+		{ station: 'djs' 							, },
+		{ k: 'Пробіг' 		, v: '330437 км' 		, },
+		{ backspace: true },
+
+		{ manufacturer: 'exide', },
+		{ k: 'Модель' 		, v: 'EA 770 Premium' 	, },
+		{ k: 'Код' 			, v: '067TE' 			, },
+		{ backspace: true },
+
+		{ k: 'Напруга' 		, v: '12 V' 			, },
+		{ k: 'Ємність' 		, v: '77 A/h' 			, },
+		{ k: 'Струм' 		, v: '760 A' 			, },
+		{ backspace: true },
+
+		{ k: 'Тип' 			, v: 'SLA' 				, }, 	// SLA ( Sealed Lead Acid ) герметизована свинцево-кислотна батарея
+		{ k: 'Плюс' 		, v: 'R+ ( внизу праворуч / вгорі ліворуч )' 		, },
+		{ k: 'Габарити' 	, v: '278*175*190 мм' 	, },
+		{ k: 'Вага' 		, v: '18.7 кг' 			, },
+		{ backspace: true },
+
+		{ shop: 'kharkiv_elmir_1' 	, }, 
+		{ k: 'Товар' 		, v: 'elmir.ua' 	, href: 'https://elmir.ua/ua/car_batteries/battery_exide_premium_77_ah_r_ea770.html', },
+		{ k: 'Дата' 		, v: '2026-02-09' 		, },
+		{ k: 'Ціна' 		, v: '4265 грн' 		, },
+		{ backspace: true },
+
+	],
+},
+{
 	id: '20251230_', title: 'Розвал/сходження', date: '2025-12-30', act: 'other',
 	keyval: [
 		

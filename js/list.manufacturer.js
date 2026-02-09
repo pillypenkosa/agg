@@ -20,6 +20,7 @@ const arrListManufacturer = [
 { id: 'bosch' 			, title: 'Bosch' 				, country: 'Німеччина' 			, year: 1921 	, internet: { avtopro: 'https://avto.pro/makers/bosch' 					, }, },
 { id: 'contitech' 		, title: 'Contitech' 			, country: 'Німеччина' 			, year: 1871 	, internet: { avtopro: 'https://avto.pro/makers/continental' 			, }, }, // Contitech - подразделение Continental
 { id: 'denso' 			, title: 'Denso' 				, country: 'Японія' 			, year: 1900 	, internet: { avtopro: 'https://avto.pro/makers/denso' 					, }, },
+{ id: 'exide' 			, title: 'Exide' 				, country: 'США' 				, year: 1888 	, internet: { avtopro: 'https://avto.pro/makers/exide/' 				, }, },
 { id: 'febi' 			, title: 'Febi' 				, country: 'Німеччина' 			, year: 1844 	, internet: { avtopro: 'https://avto.pro/makers/febi' 					, }, },
 { id: 'gates' 			, title: 'Gates' 				, country: 'США' 				, year: 1917 	, internet: { avtopro: 'https://avto.pro/makers/gates' 					, }, },
 { id: 'gkn' 			, title: 'GKN' 					, country: 'Велика Британія' 	, year: 1759 	, internet: { avtopro: 'https://avto.pro/makers/spidan' 				, }, },
