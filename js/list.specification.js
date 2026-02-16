@@ -68,6 +68,21 @@ const arrListSpecification = [
 		{ k: 'Управління' 				, v: 'Механічна' 				, },
 		{ k: 'Кількість передач' 		, v: '5' 						, },
 		//{ k: 'Масло' 					, v: 'VAG G052726A2, 75W-90' 	, },
+		{ backspace: true },
+
+
+
+		{ k: 'Код' 						, v: 'CNL' 						, },
+		{ k: 'Код VAG' 					, v: '02A300048H' 				, },
+		{ backspace: true },
+
+		{ k: 'Код' 						, v: 'CRU' 						, },
+		{ k: 'Код VAG' 					, v: '02A300048K' 				, },
+		{ backspace: true },
+
+
+
+
 
 	],
 },
