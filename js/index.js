@@ -179,9 +179,18 @@ function showSpoilers( arr ) {
 						
 
 
-						if ( objListManufacturer[ k_keyval.manufacturer ].internet && objListManufacturer[ k_keyval.manufacturer ].internet.avtopro ) {
+						if ( objListManufacturer[ k_keyval.manufacturer ].internet ) {
 
-							htmlManufacturer = `<a href="${ objListManufacturer[ k_keyval.manufacturer ].internet.avtopro }" title="${ htmlATitle }"  target="_blank">${ htmlManufacturerName }${ htmlLinkSign }</a>`;
+							if ( objListManufacturer[ k_keyval.manufacturer ].internet.avtopro ) 
+								htmlManufacturer = `<a href="${ objListManufacturer[ k_keyval.manufacturer ].internet.avtopro }" title="${ htmlATitle }" target="_blank">${ htmlManufacturerName } ( avto.pro )${ htmlLinkSign }</a>`;
+
+							
+							if ( objListManufacturer[ k_keyval.manufacturer ].internet.other ) 
+								htmlManufacturer = `<a href="${ objListManufacturer[ k_keyval.manufacturer ].internet.other }" title="${ htmlATitle }" target="_blank">${ htmlManufacturerName }${ htmlLinkSign }</a>`;
+
+
+
+
 
 
 						}
