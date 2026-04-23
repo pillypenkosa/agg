@@ -38,7 +38,20 @@ const arrListCat = [
 
 
 
+/*
 
+try {
+	console.log( qwerty );
+
+
+} catch {
+
+
+	console.log( 222 );
+	alert( 'Где про скорые помощи, блядь?' );
+}
+
+*/
 
 
 

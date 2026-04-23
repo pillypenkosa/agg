@@ -15,6 +15,8 @@
 const arrListManufacturer = [
 
 
+
+{ id: 'alkar' 			, title: 'Alkar' 				, country: 'Іспанія' 			, year: 1968 	, internet: { avtopro: 'https://avto.pro/makers/alkar' 					, }, },
 { id: 'beru' 			, title: 'Beru' 				, country: 'Німеччина' 			, year: 1912 	, internet: { avtopro: 'https://avto.pro/makers/beru' 					, }, },
 { id: 'bilstein' 		, title: 'Bilstein ' 			, country: 'Німеччина' 			, year: 1873 	, internet: { avtopro: 'https://avto.pro/makers/bilstein' 				, }, },
 { id: 'bosch' 			, title: 'Bosch' 				, country: 'Німеччина' 			, year: 1921 	, internet: { avtopro: 'https://avto.pro/makers/bosch' 					, }, },
@@ -44,13 +46,6 @@ const arrListManufacturer = [
 { id: 'vag' 			, title: 'VAG' 					, country: 'Німеччина' 			, year: 1937 	, internet: { avtopro: 'https://avto.pro/makers/vag' 					, }, },
 { id: 'wix' 			, title: 'Wix' 					, country: 'США' 				, year: 1939 	, internet: { avtopro: 'https://avto.pro/makers/wix' 					, }, },
 { id: 'zap' 			, title: 'Zap' 					, country: 'Польща' 			, year: 1925 	, internet: { other: 'https://zap.pl/ru/ru-istoriya-kompanii' 			, }, },
-
-
-
-
-
-
- 
 
 
 
