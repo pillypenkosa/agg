@@ -375,9 +375,16 @@ function showSpoilers( arr ) {
 		if ( k_spoiler.date ) 
 			htmlDate = `<span class="spoiler-title-cat">${ k_spoiler.date }</span> `;
 		
+
+		let htmlTime = '';
+		if ( k_spoiler.time )
+			htmlTime = `<span class="spoiler-title-cat">( ${ k_spoiler.time }-й раз )</span>`;
+
+
+
 		let htmlAct = '';
 		if ( k_spoiler.act && objListServiceAct && objListServiceAct[ k_spoiler.act ] ) 
-			htmlAct = `<span class="spoiler-title-cat"> ...${ objListServiceAct[ k_spoiler.act ].title }</span> `;
+			htmlAct = `<span class="spoiler-title-cat"> ...${ objListServiceAct[ k_spoiler.act ].title }</span>${ htmlTime } `;
 		
 
 
