@@ -242,6 +242,8 @@ const arrListOEM = [
 { id: '431953231' 		, title: 'Реле 22 ( поворотники, причіп ), позиція 6' 			, manufacturer: [ { id: 'vag', n: '431953231', }, ] 		, cat: { electro: 1, relay: 1, }, },
 { id: '141951253' 		, title: 'Реле 53 ( сигнал ), позиція 11' 						, manufacturer: [ { id: 'vag', n: '141951253 B', }, ] 		, cat: { electro: 1, relay: 1, }, },
 
+{ id: '357837083' 		, title: 'Ричаг з\'єднувальний тяг замка водійської двері' 		, manufacturer: [ { id: 'vag', n: '357837083', }, ] 		, cat: { door: 1, }, },
+
 { id: '3a0837235' 		, title: 'Ручка дверей ( внутрішня ліва )' 						, manufacturer: [ { id: 'vag', n: '3A083723501C', }, ] 		, cat: { door: 1, salon: 1, plastic: 1, }, },
 { id: '3a0837236' 		, title: 'Ручка дверей ( внутрішня права )' 					, manufacturer: [ { id: 'vag', n: '3A083723601C', }, ] 		, cat: { door: 1, salon: 1, plastic: 1, }, },
 
